@@ -21,12 +21,12 @@ function Express() {
   }
 
   return (
-    <div>
+    <div className='card'>
         <center>
-            <h4>Add Models</h4>
-            <form onSubmit={submitHandler} autoComplete="off">
-              <input type="text" value={id} name="id" placeholder='ID' onChange={changeHandler}/>
-              <input type="text" value={name} name="name" placeholder='Name' onChange={changeHandler}/>
+            <h4 className='mt-3'>Add Models</h4>
+            <form onSubmit={submitHandler} autoComplete="off" className='card-body'>
+              <input type="text" value={id} name="id" placeholder='ID' onChange={changeHandler}/><br/><br/>
+              <input type="text" value={name} name="name" placeholder='Name' onChange={changeHandler}/><br/><br/>
               <input type="submit" name="Add Model" />
             </form>
         </center>
